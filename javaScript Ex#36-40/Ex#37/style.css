@@ -3,63 +3,89 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #eee;
+}
 .container{
-    width: min(50%, 12260px);
+    width: min(50%, 1260px);
     margin: 20px auto;
 }
-
+#post-form{
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+img{
+    width: 100%;
+}
 h1, h2{
     font-size: 1.5rem;
     font-weight: 800;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-input[type="color"]{
+input[type="text"], input[type="submit"], textarea{
     margin-left: 10px;
-    width: 100px;
+    width: 95%;
     height: 35px;
     margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    /* border: none; */
 }
-.color-preview{
-    width: 250px;
-    height: 200px;
-    border: 2px solid black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-.list-items{
-    margin: 10px;
-}
-.input-container{
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;    
-}
-label{
-    display: inline-block;
-    font-size: 1.2rem;
-    font-weight: 700;
-    padding: 20px 0;
-}
-input[type="button"]{
+input[type="button"], input[type="submit"]{
     border: none;
-    padding: 20px;
-    background-color: blueviolet;
+    padding: 10px;
+    background-color: gray;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 10px;
     cursor: pointer;
 }
-#list-items{
-    width:250px;
-    font-size: 1.3rem;
-    font-weight: 700;
-    line-height: 1.5;
-    border: 1px solid red;
-    text-align: center;
-    margin-bottom: 10px;
-    display: none;
+#post-body{
+height: 150px;
+}
+.all-posts{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.image{
+    /* width: 100%; */
+    border-radius: 10px;
+}
+.posts{
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+.posts li{
+    list-style: none;
+}
+.posts p{
+    /* display: block; */
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 20px;
+}
+.actions{
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 20px;
 }
