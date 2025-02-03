@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS | Ex#39 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Language Translator</h1>
+        <form id="form" method="post">
+            <label for="from-input">From:</label>
+            <select name="" id="from-input">
+                <option value="">Select a language</option>
+            </select>
+
+            <label for="to-input">To:</label>
+            <select name="" id="to-input">
+                <option value="">Select a language</option>
+            </select>
+            <label for="text-to-translate">Text to translate:</label>
+            <textarea name="" id="text-to-translate"></textarea>
+            <button type="submit">Translate</button>
+        </form>
+        <div id="translated-text">
+            <h2>Translated Text:</h2>
+            <p id="display-translated-text"></p>
+        </div>
+       
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
