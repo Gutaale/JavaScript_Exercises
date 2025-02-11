@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+}
+
+.container{
+    width: min(80%, 1260px);
+    margin: 40px auto;
+    /* background-color: white; */
+}
+
+video{
+    width: 100%;
+    /* height: 100%; */
+    object-fit:cover;
+    /* z-index: 100; */
+
+}
+.video-player{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.9);
+    position: relative;
+}
+.title{
+    width: 80%;
+    margin: 20px auto;
+}
+.title p{
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+#video-content{
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.progress-bar{
+    background: #ccc;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 12%;
+}
+.progress{
+    background: #fd3939;
+    width: 0%;
+    height: 5px;
+    border-radius: 2%;
+    position: absolute;
+    bottom: 0;
+}
+.controls{
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 3%;
+    margin-left: 20px;
+}
+.controls .volume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+.controls .volume i{
+   font-size: 1.5rem;
+   font-weight: 700;
+}
+.play-controlles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    left: calc(50%-20px);
+    bottom: 20px;
+}
+.play-controlles button{
+    background: transparent;
+    border: none;
+    /* padding: 10px; */
+    text-align: center;
+}
+.play-controlles button i{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.speed-control{
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+    background: transparent;
+}
+.speed-control select{
+    background: white;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 0;
+    outline: none;
+}
+.screen-controlls{
+    /* margin-right: -10px; */
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+.screen-controlls button{
+    background: transparent;
+    border: none;
+}
+.screen-controlls i{
+    color: white;
+    font-size: 1.5rem;
+}
