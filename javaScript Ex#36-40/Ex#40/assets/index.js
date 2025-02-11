@@ -22,8 +22,8 @@ let isPlaying=false
 let speed=1
 
 const videos=[
-    {title:"Trump imposes 25% tariffs on steel and aluminum, EU pushes back",artist:'Artist one',src:"assets/videos/video-1.mp4" },
-    {title:"Can Trump win a trade war with China? - The Global Story podcast, BBC World Service",artist:'Artist two',src:'assets/videos/video-2.mp4' },
+    // {title:"Trump imposes 25% tariffs on steel and aluminum, EU pushes back",artist:'Artist one',src:"assets/videos/video-1.mp4" },
+    // {title:"Can Trump win a trade war with China? - The Global Story podcast, BBC World Service",artist:'Artist two',src:'assets/videos/video-2.mp4' },
     {title:"DeepSeek, TikTok, Temu: How China is taking the lead in tech - BBC World Service",artist:'Artist three',src:'assets/videos/video-3.mp4' },
 ]
 
